@@ -3,6 +3,20 @@ CREATE DATABASE election;
 
 USE election;
 
+DROP TABLE IF EXISTS election_info;
+CREATE TABLE election_info (
+
+	  SocietyName VARCHAR(200) NOT NULL,
+    SocietyContact VARCHAR(50),
+    ElectionName VARCHAR(200) NOT NULL,
+    ElectionStartTime DATE,
+    ElectionEndTime DATE,
+    SocietyLogo VARCHAR(21844),
+    SocietyColor VARCHAR(20),
+    SocietyPhoneNumber VARCHAR(12)
+
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 DROP TABLE IF EXISTS `votes` ;
 
 CREATE  TABLE IF NOT EXISTS `votes` (
