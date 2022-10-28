@@ -16,6 +16,8 @@
          .box {
             border:#666666 solid 1px;
          }
+          
+          
       </style>
       
    </head>
@@ -29,12 +31,10 @@
             <div style = "margin:30px">
                
                <form action = "" method = "post">
-                  <label>UserName  :</label><input type = "text" name = "username" class = "box"/><br /><br />
-                  <label>Password  :</label><input type = "password" name = "password" class = "box" /><br/><br />
-                  <input type = "submit" value = " Submit "/><br/> <br> 
-                  <input type="checkbox" id="admin" name="admin" value="AdminControl"> 
-                   
-                  <label for="admin"> Administrator </label> 
+                  <label>User Email:</label><input type = "text" name = "username" class = "box"/><br /><br />
+                  <label>Password:</label><input type = "password" name = "password" class = "box" /><br/><br />
+                  <input type = "submit" value = " Submit "/><br/> 
+                  
                    
                </form>
                
