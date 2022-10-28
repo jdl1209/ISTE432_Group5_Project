@@ -31,7 +31,11 @@
                <form action = "" method = "post">
                   <label>UserName  :</label><input type = "text" name = "username" class = "box"/><br /><br />
                   <label>Password  :</label><input type = "password" name = "password" class = "box" /><br/><br />
-                  <input type = "submit" value = " Submit "/><br />
+                  <input type = "submit" value = " Submit "/><br/> <br> 
+                  <input type="checkbox" id="admin" name="admin" value="AdminControl"> 
+                   
+                  <label for="admin"> Administrator </label> 
+                   
                </form>
                
                <div style = "font-size:11px; color:#cc0000; margin-top:10px"><?php echo $error; ?></div>
