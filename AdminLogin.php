@@ -17,6 +17,30 @@
             border:#666666 solid 1px;
          }
           
+          .submit { 
+          background-color: #000000; 
+              border: none;
+              background-image: linear-gradient(#464d55, #25292e);
+              padding: 6px 18px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+              cursor: pointer;
+              color: #fff; 
+          }
+          
+          .submit:hover {
+          box-shadow: rgba(0, 1, 0, .2) 0 2px 8px;
+          opacity: .85;
+        }
+
+@media (max-width: 420px) {
+  .submit {
+    height: 48px;
+  }
+}
+          
           
       </style>
       
@@ -33,7 +57,7 @@
                <form action = "" method = "post">
                   <label>Admin Email:</label><input type = "text" name = "username" class = "box"/><br /><br />
                   <label>Password:</label><input type = "password" name = "password" class = "box" /><br/><br />
-                  <input type = "submit" value = " Submit "/><br/> 
+                  <input type = "submit" value = " Submit " class="submit"/><br/> 
                   
                    
                </form>
