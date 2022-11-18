@@ -75,6 +75,70 @@
             margin-bottom: 20px;
             margin-left: 120px;
         }
+        
+        
+    .help-tip{
+    position: relative;
+    top: 18px;
+    right: 18px;
+    text-align: center;
+    background-color: #BCDBEA;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    line-height: 26px;
+    cursor: default;
+}
+
+.help-tip:before{
+    content:'?';
+    font-weight: bold;
+    color:#fff;
+}
+
+.help-tip:hover p{
+    display:block;
+    transform-origin: 100% 0%;
+
+    -webkit-animation: fadeIn 0.3s ease-in-out;
+    animation: fadeIn 0.3s ease-in-out;
+
+}
+
+.help-tip p{     
+    display: none;
+    text-align: left;
+    background-color: #1E2021;
+    padding: 20px;
+    width: 300px;
+    position: absolute;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    right: -4px;
+    color: #FFF;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.help-tip p:before{ 
+    position: absolute;
+    content: '';
+    width:0;
+    height: 0;
+    border:6px solid transparent;
+    border-bottom-color:#1E2021;
+   
+}
+
+.help-tip p:after{ / Prevents the tooltip from being hidden */
+    width:100%;
+    height:40px;
+    content:'';
+    position: absolute;
+    top:-40px;
+    left:0;
+}
     </style>
 </head>
   
@@ -85,114 +149,63 @@
     <form id="form">
  
         <!-- Details -->
-        <div class="form-control">
-            <label for="name" id="label-name">
-                Name
-            </label>
- 
-            <!-- Input Type Text -->
-            <input type="text"
-                   id="name"
-                   placeholder="Enter your name" />
-        </div>
   
         <div class="form-control">
-            <label for="email" id="label-email">
-                Email
-            </label>
- 
-            <!-- Input Type Email-->
-            <input type="email"
-                   id="email"
-                   placeholder="Enter your email" />
-        </div>
-  
-        <div class="form-control">
-            <label for="age" id="label-age">
-                Age
-            </label>
- 
-            <!-- Input Type Text -->
-            <input type="text"
-                   id="age"
-                   placeholder="Enter your age" />
-        </div>
-  
-        <div class="form-control">
-            <label for="role" id="label-role">
-                Which option best describes you?
-            </label>
-             
-            <!-- Dropdown options -->
-            <select name="role" id="role">
-                <option value="student">Student</option>
-                <option value="intern">Intern</option>
-                <option value="professional">
-                    Professional
-                </option>
-                <option value="other">Other</option>
-            </select>
-        </div>
-  
-        <div class="form-control">
-            <label>
-                Would you recommend GeeksforGeeks
-                to a friend?
-            </label>
- 
-            <!-- Input Type Radio Button -->
-            <label for="recommed-1">
-                <input type="radio"
-                       id="recommed-1"
-                       name="recommed">Yes</input>
-            </label>
-            <label for="recommed-2">
-                <input type="radio"
-                       id="recommed-2"
-                       name="recommed">No</input>
-            </label>
-            <label for="recommed-3">
-                <input type="radio"
-                       id="recommed-3"
-                       name="recommed">Maybe</input>
-            </label>
-        </div>
-  
-        <div class="form-control">
-            <label>Languages and Frameworks known
-                <small>(Check all that apply)</small>
+            <label> President
+                <small> (Vote for one of the following candidates) </small>
             </label>
             <!-- Input Type Checkbox -->
             <label for="inp-1">
                 <input type="checkbox"
-                       name="inp">C</input></label>
+                       name="inp">George Hamilton </input></label>
             <label for="inp-2">
                 <input type="checkbox"
-                       name="inp">C++</input></label>
+                       name="inp">Alexander Friberg</input></label>
+                <div class="help-tip">
+            <p>This is the inline help tip! It can contain all kinds of HTML. Style it as you please.</p>
+                </div>
+        </div>
+  
+        <div class="form-control">
+            <label> Vice-President
+                <small> (Vote for one of the following candidates) </small>
+            </label>
+            <!-- Input Type Checkbox -->
+            <label for="inp-1">
+                <input type="checkbox"
+                       name="inp">George Romero </input></label>
+            <label for="inp-2">
+                <input type="checkbox"
+                       name="inp">Frank Tiller</input></label>
+        </div>
+  
+        <div class="form-control">
+            <label> Treasurer  
+                <small> (Vote for one of the following candidates) </small>
+            </label>
+            <!-- Input Type Checkbox -->
+            <label for="inp-1">
+                <input type="checkbox"
+                       name="inp">Anne Roberts</input></label>
+            <label for="inp-2">
+                <input type="checkbox"
+                       name="inp">Bob Marshall</input></label>
+        </div>
+  
+        <div class="form-control">
+            <label> Secretary 
+                <small> (Vote for one of the following candidates) </small>
+            </label>
+            <!-- Input Type Checkbox -->
+            <label for="inp-1">
+                <input type="checkbox"
+                       name="inp">Jeffery Hague</input></label>
+            <label for="inp-2">
+                <input type="checkbox"
+                       name="inp">Emily Clearview</input></label>
             <label for="inp-3">
                 <input type="checkbox"
-                       name="inp">C#</input></label>
-            <label for="inp-4">
-                <input type="checkbox"
-                       name="inp">Java</input></label>
-            <label for="inp-5">
-                <input type="checkbox"
-                       name="inp">Python</input></label>
-            <label for="inp-6">
-                <input type="checkbox"
-                       name="inp">JavaScript</input></label>
-            <label for="inp-7">
-                <input type="checkbox"
-                       name="inp">React</input></label>
-            <label for="inp-7">
-                <input type="checkbox"
-                       name="inp">Angular</input></label>
-            <label for="inp-7">
-                <input type="checkbox"
-                       name="inp">Django</input></label>
-            <label for="inp-7">
-                <input type="checkbox"
-                       name="inp">Spring</input></label>
+                       name="inp">Clarence Larrsen </input></label>
         </div>
   
        
