@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400%");
+        /* Styling the Body element i.e. Color,
+        Font, Alignment */
+        body {
+            background-color: lightblue;
+            font-family: Verdana;
+            text-align: center;
+        }
+ 
+        /* Styling the Form (Color, Padding, Shadow) */
+        form {
+            background-color: #fff;
+            max-width: 475px;
+            margin: 40px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+ 
+        /* Styling form-control Class */
+        .form-control {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+ 
+        /* Styling form-control Label */
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+ 
+        /* Styling form-control input,
+        select, textarea */
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+ 
+        /* Styling form-control Radio
+        button and Checkbox */
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+ 
+        /* Styling Button */
+        button {
+            background-color: lightgoldenrodyellow;
+            border: 2px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 50%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            margin-left: 120px;
+        }
+        
+        #tooltip info 
+        
+      
+
+
+input {
+  border: none;
+  width: 170px;
+  height: 25px;
+  outline: none;
+  padding-left: 10px;
+}
+
+.tooltip {
+  position: relative;
+  background: gray;
+  padding: 3px 12px;
+  margin: 5px;
+  font-size: 15px;
+  border-radius: 50%;
+  color: #FFF;
+}
+
+.tooltip:before,
+.tooltip:after {
+  position: absolute;
+  content: "";
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.tooltip:before {
+  border-width: 10px 8px 0 8px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+  top: -15px;
+  transform: translateY(10px);
+}
+
+.tooltip:after {
+  content: attr(data-tooltip);
+  background: black;
+  width: 160px;
+  height: 70px;
+  font-size: 13px;
+  font-weight: 300;
+  top: -75px;
+  left: -10px;
+  padding: 10px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transform: translateY(20px);
+}
+
+.tooltip:hover::before,
+.tooltip:hover::after {
+  opacity: 1;
+  transform: translateY(2px);
+}
+
+
+#anim:hover {
+  animation: shake 300ms ease-in-out forwards;
+} 
