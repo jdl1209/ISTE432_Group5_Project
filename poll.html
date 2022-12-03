@@ -10,137 +10,12 @@
         Election Poll
     </title>
  
-    <style>
- 
-        /* Styling the Body element i.e. Color,
-        Font, Alignment */
-        body {
-            background-color: lightblue;
-            font-family: Verdana;
-            text-align: center;
-        }
- 
-        /* Styling the Form (Color, Padding, Shadow) */
-        form {
-            background-color: #fff;
-            max-width: 475px;
-            margin: 40px auto;
-            padding: 30px 20px;
-            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
-        }
- 
-        /* Styling form-control Class */
-        .form-control {
-            text-align: left;
-            margin-bottom: 25px;
-        }
- 
-        /* Styling form-control Label */
-        .form-control label {
-            display: block;
-            margin-bottom: 10px;
-        }
- 
-        /* Styling form-control input,
-        select, textarea */
-        .form-control input,
-        .form-control select,
-        .form-control textarea {
-            border: 1px solid #777;
-            border-radius: 2px;
-            font-family: inherit;
-            padding: 10px;
-            display: block;
-            width: 95%;
-        }
- 
-        /* Styling form-control Radio
-        button and Checkbox */
-        .form-control input[type="radio"],
-        .form-control input[type="checkbox"] {
-            display: inline-block;
-            width: auto;
-        }
- 
-        /* Styling Button */
-        button {
-            background-color: lightgoldenrodyellow;
-            border: 2px solid #777;
-            border-radius: 2px;
-            font-family: inherit;
-            font-size: 21px;
-            display: block;
-            width: 50%;
-            margin-top: 50px;
-            margin-bottom: 20px;
-            margin-left: 120px;
-        }
+    <link rel="stylesheet" href="poll_looks.css"> 
         
-        
-    .help-tip{
-    position: relative;
-    top: 18px;
-    right: 18px;
-    text-align: center;
-    background-color: #BCDBEA;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    font-size: 14px;
-    line-height: 26px;
-    cursor: default;
-}
+    
 
-.help-tip:before{
-    content:'?';
-    font-weight: bold;
-    color:#fff;
-}
 
-.help-tip:hover p{
-    display:block;
-    transform-origin: 100% 0%;
-
-    -webkit-animation: fadeIn 0.3s ease-in-out;
-    animation: fadeIn 0.3s ease-in-out;
-
-}
-
-.help-tip p{     
-    display: none;
-    text-align: left;
-    background-color: #1E2021;
-    padding: 20px;
-    width: 300px;
-    position: absolute;
-    border-radius: 3px;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-    right: -4px;
-    color: #FFF;
-    font-size: 13px;
-    line-height: 1.4;
-}
-
-.help-tip p:before{ 
-    position: absolute;
-    content: '';
-    width:0;
-    height: 0;
-    border:6px solid transparent;
-    border-bottom-color:#1E2021;
-   
-}
-
-.help-tip p:after{ / Prevents the tooltip from being hidden */
-    width:100%;
-    height:40px;
-    content:'';
-    position: absolute;
-    top:-40px;
-    left:0;
-}
-    </style>
-</head>
+ 
   
 <body>
     <h1>Election Candidates</h1>
@@ -154,58 +29,69 @@
             <label> President
                 <small> (Vote for one of the following candidates) </small>
             </label>
+            <p> </p>
             <!-- Input Type Checkbox -->
-            <label for="inp-1">
-                <input type="checkbox"
-                       name="inp">George Hamilton </input></label>
-            <label for="inp-2">
-                <input type="checkbox"
-                       name="inp">Alexander Friberg</input></label>
-                <div class="help-tip">
-            <p>This is the inline help tip! It can contain all kinds of HTML. Style it as you please.</p>
-                </div>
+            
+                <input type="checkbox" id="George"
+                       name="George">George Hamilton  <span class="tooltip" data-tooltip="Worked at company for 12 years previously as a treasurer.">?</span> <label for="George"></label>
+                        <br/>
+            
+                <input type="checkbox" id="Alexander"
+                       name="Alexander">Alexander Friberg  <span class="tooltip" data-tooltip="Grandfather started the business, worked for 8 years and is ready to lead.">?</span>  <label for="Alexander"></label>
+                
         </div>
+    
+  
+    
+    
   
         <div class="form-control">
             <label> Vice-President
                 <small> (Vote for one of the following candidates) </small>
             </label>
+            <p> </p>
             <!-- Input Type Checkbox -->
             <label for="inp-1">
                 <input type="checkbox"
-                       name="inp">George Romero </input></label>
+                       name="inp">George Romero <span class="tooltip" data-tooltip="Vice-President to George, trusted worker with 9 years of experience.">?</span> </input></label>
+                        <br/> 
             <label for="inp-2">
                 <input type="checkbox"
-                       name="inp">Frank Tiller</input></label>
+                       name="inp">Frank Tiller <span class="tooltip" data-tooltip="Vice-President to Alexander, worked for only 4 years but has strong leadership skills.">?</span> </input></label>
         </div>
   
         <div class="form-control">
             <label> Treasurer  
                 <small> (Vote for one of the following candidates) </small>
             </label>
+            <p> </p>
             <!-- Input Type Checkbox -->
             <label for="inp-1">
                 <input type="checkbox"
-                       name="inp">Anne Roberts</input></label>
+                       name="inp">Anne Roberts <span class="tooltip" data-tooltip="Worked previously at Bank Of America, currently 5 years of experience. ">?</span> </input></label>
+                        <br/> 
             <label for="inp-2">
                 <input type="checkbox"
-                       name="inp">Bob Marshall</input></label>
+                       name="inp">Bob Marshall <span class="tooltip" data-tooltip="Been with the company for 7 years, brother previously was treasurer.">?</span> </input></label>
         </div>
   
         <div class="form-control">
             <label> Secretary 
                 <small> (Vote for one of the following candidates) </small>
             </label>
+            <p> </p>
             <!-- Input Type Checkbox -->
             <label for="inp-1">
                 <input type="checkbox"
-                       name="inp">Jeffery Hague</input></label>
+                       name="inp">Jeffery Hague <span class="tooltip" data-tooltip="Worked at company for 6 years, established strong connections and work ethics.">?</span> </input></label>
             <label for="inp-2">
+                    <br/>
                 <input type="checkbox"
-                       name="inp">Emily Clearview</input></label>
+                       name="inp">Emily Clearview <span class="tooltip" data-tooltip="She has been working for 3 years, showing strong organizational skills.">?</span> </input></label>
+                    <br/> 
             <label for="inp-3">
                 <input type="checkbox"
-                       name="inp">Clarence Larrsen </input></label>
+                       name="inp">Clarence Larrsen <span class="tooltip" data-tooltip="Working at company for 4 years, displays hard work at all instances.">?</span> </input></label>
         </div>
   
        
