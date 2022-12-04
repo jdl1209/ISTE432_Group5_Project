@@ -21,4 +21,10 @@ function validateForm() {
 
 
   return isFormValid;
-} 
+} //end form validation 
+
+
+var datetime = new Date();
+console.log(datetime);
+document.getElementById("time").textContent = datetime; // printing the day the form was submitted 
+
