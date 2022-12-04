@@ -8,3 +8,17 @@ function toggle(which,theClass){
         }
     }
 } // end function  
+
+function validateForm() {
+
+  var isFormValid = true;
+
+  if (document.querySelectorAll('[type="checkbox"]:checked').length < 4) {
+    alert('Please check at least 1 checkbox for each category');
+    isFormValid = false;
+  }
+
+
+
+  return isFormValid;
+} 

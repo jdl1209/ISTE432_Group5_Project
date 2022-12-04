@@ -23,8 +23,8 @@
     <h1>Election Candidates</h1>
   
     <!-- Create Form -->
-    <form id="form">
- 
+    <form onsubmit="return validateForm();"> 
+  
         <!-- Details -->
   
         <div class="form-control">
@@ -95,14 +95,14 @@
                        name="Secretary" class = "group4" onclick="toggle(this, 'group4')" value="Clarence" /> Clarence Larrsen <span class="tooltip" data-tooltip="Working at company for 4 years, displays hard work at all instances.">?</span> <label for="Clarence"></label>
         </div>
   
-       
+    
   
         <!-- Multi-line Text Input Control -->
         <button type="reset" value="Reset">
             Clear Votes
         </button>
 
-        <button type="submit" value="submit">
+        <button type="submit" value="Submit">
             Submit
         </button>
     </form>
