@@ -33,11 +33,11 @@
             <!-- Input Type Checkbox -->
             
                 <input type="checkbox" id="George"
-                       name="George">George Hamilton  <span class="tooltip" data-tooltip="Worked at company for 12 years previously as a treasurer.">?</span> <label for="George"></label>
+                       name="President" value="George" />George Hamilton  <span class="tooltip" data-tooltip="Worked at company for 12 years previously as a treasurer.">?</span> <label for="George"></label>
                         <br/>
             
                 <input type="checkbox" id="Alexander"
-                       name="Alexander">Alexander Friberg  <span class="tooltip" data-tooltip="Grandfather started the business, worked for 8 years and is ready to lead.">?</span>  <label for="Alexander"></label>
+                       name="President" value="Alexander" />Alexander Friberg  <span class="tooltip" data-tooltip="Grandfather started the business, worked for 8 years and is ready to lead.">?</span>  <label for="Alexander"></label>
                 
         </div>
     
@@ -50,14 +50,14 @@
                 <small> (Vote for one of the following candidates) </small>
             </label>
             <p> </p>
-            <!-- Input Type Checkbox -->
-            <label for="inp-1">
-                <input type="checkbox"
-                       name="inp">George Romero <span class="tooltip" data-tooltip="Vice-President to George, trusted worker with 9 years of experience.">?</span> </input></label>
+            <!-- Input Type Checkbox, Romero used instead of firstname George because we already used George previously -->
+            
+                <input type="checkbox" id="Romero"
+                       name="VicePresident" value="Romero" />George Romero <span class="tooltip" data-tooltip="Vice-President to George, trusted worker with 9 years of experience.">?</span> <label for="Romero"></label>
                         <br/> 
-            <label for="inp-2">
-                <input type="checkbox"
-                       name="inp">Frank Tiller <span class="tooltip" data-tooltip="Vice-President to Alexander, worked for only 4 years but has strong leadership skills.">?</span> </input></label>
+            
+                <input type="checkbox" id="Frank"
+                       name="VicePresident" value="Frank" />Frank Tiller <span class="tooltip" data-tooltip="Vice-President to Alexander, worked for only 4 years but has strong leadership skills.">?</span> <label for="Frank"></label>
         </div>
   
         <div class="form-control">
@@ -66,13 +66,12 @@
             </label>
             <p> </p>
             <!-- Input Type Checkbox -->
-            <label for="inp-1">
-                <input type="checkbox"
-                       name="inp">Anne Roberts <span class="tooltip" data-tooltip="Worked previously at Bank Of America, currently 5 years of experience. ">?</span> </input></label>
+            
+                <input type="checkbox" id="Anne"
+                       name="Treasurer" value="Anne" />Anne Roberts <span class="tooltip" data-tooltip="Worked previously at Bank Of America, currently 5 years of experience. ">?</span> <label for="Anne"> </label>
                         <br/> 
-            <label for="inp-2">
-                <input type="checkbox"
-                       name="inp">Bob Marshall <span class="tooltip" data-tooltip="Been with the company for 7 years, brother previously was treasurer.">?</span> </input></label>
+                <input type="checkbox" id="Bob"
+                       name="Treasurer" value="Bob" />Bob Marshall <span class="tooltip" data-tooltip="Been with the company for 7 years, brother previously was treasurer.">?</span> <label for="Bob"></label>
         </div>
   
         <div class="form-control">
@@ -81,23 +80,23 @@
             </label>
             <p> </p>
             <!-- Input Type Checkbox -->
-            <label for="inp-1">
-                <input type="checkbox"
-                       name="inp">Jeffery Hague <span class="tooltip" data-tooltip="Worked at company for 6 years, established strong connections and work ethics.">?</span> </input></label>
-            <label for="inp-2">
+        
+                <input type="checkbox" id="Jeffery"
+                       name="Secretary" value="Jeffery" />Jeffery Hague <span class="tooltip" data-tooltip="Worked at company for 6 years, established strong connections and work ethics.">?</span> <label for="Jeffery"></label>
                     <br/>
-                <input type="checkbox"
-                       name="inp">Emily Clearview <span class="tooltip" data-tooltip="She has been working for 3 years, showing strong organizational skills.">?</span> </input></label>
+            
+                <input type="checkbox" id="Emily"
+                       name="Secretary" value="Emily" />Emily Clearview <span class="tooltip" data-tooltip="She has been working for 3 years, showing strong organizational skills.">?</span><label for="Emily"></label>
                     <br/> 
-            <label for="inp-3">
-                <input type="checkbox"
-                       name="inp">Clarence Larrsen <span class="tooltip" data-tooltip="Working at company for 4 years, displays hard work at all instances.">?</span> </input></label>
+        
+                <input type="checkbox" id="Clarence"
+                       name="Secretary" value="Clarence" /> Clarence Larrsen <span class="tooltip" data-tooltip="Working at company for 4 years, displays hard work at all instances.">?</span> <label for="Clarence"></label>
         </div>
   
        
   
         <!-- Multi-line Text Input Control -->
-        <button type="submit" value="submit">
+        <button type="reset" value="Reset">
             Clear Votes
         </button>
 
