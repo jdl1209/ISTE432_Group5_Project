@@ -24,8 +24,8 @@
     <h1>Election Candidates</h1>
    
     <!-- Create Form -->
-    <form name = "form" action="confirmation.html"  onsubmit="return validateForm();"> 
-  
+    <form name = "form" action="confirmation.html" onsubmit="return validateForm();"> 
+    
         <!-- Details -->
         
         <div class="form-control">
@@ -103,7 +103,7 @@
             Clear Votes
         </button>
 
-        <button type="submit" value="Submit">
+        <button type="submit" value="Submit" onclick="return confirm('Are you sure you want to vote for these candidates?')">
             Submit
         </button>
     </form>
