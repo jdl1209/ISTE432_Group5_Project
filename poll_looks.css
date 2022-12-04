@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400%");
-        /* Styling the Body element i.e. Color,
+        /* Styling the Body element:  Color,
         Font, Alignment */
         body {
             background-color: lightblue;
@@ -51,16 +51,14 @@
  
         /* Styling Button */
         button {
-            background-color: lightgoldenrodyellow;
-            border: 2px solid #777;
-            border-radius: 2px;
-            font-family: inherit;
-            font-size: 21px;
-            display: block;
-            width: 50%;
-            margin-top: 50px;
-            margin-bottom: 20px;
-            margin-left: 120px;
+            background: #0066A2;
+            color: white;
+            border-style: outset;
+            border-color: #0066A2;
+            height: 50px;
+            width: 100px;
+            font: bold15px arial,sans-serif;
+            text-shadow: none;
         }
         
         #tooltip info 
@@ -95,9 +93,9 @@ input {
 }
 
 .tooltip:before {
-  border-width: 10px 8px 0 8px;
+  border-width: 8px 8px 0 8px;
   border-style: solid;
-  border-color: black transparent transparent transparent;
+  border-color: black transparent;
   top: -15px;
   transform: translateY(10px);
 }
