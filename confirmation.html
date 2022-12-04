@@ -1,1 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+     <p> Ballot cast on: <span id="datetime"></span></p>
 
+<script>
+var dt = new Date();
+document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+</script> 
+    <title>
+       Confirmation Page
+    </title>
+ 
+    <link rel="stylesheet" href="confirmation_look.css"> 
+    
+  
+    
+    <body> 
+      
+        
+        
+        
+        <form name = "form" >
+  
+        <!-- Details -->
+  
+       
+         <div class="main-content">
+        <h1> Your ballot has been cast! </h1>
+        <p class="main-contentbody" data-lead-id="main-content-body"> You have cast your votes in the society election and they have been accounted for! 
+           </p>   
+             
+             
+    </div>
+        </form>    
+        
+</body>
+  
+</html>
