@@ -1,21 +1,8 @@
 <?php
    include("config.php");
    include("functions.php");
-
-   $db = 'election';
-   session_start();
-   
-   if($_SERVER["REQUEST_METHOD"] == "POST") {
-      // username and password sent from form 
-      
-      $myusername = mysqli_real_escape_string($db,$_POST['username']);
-      $mypassword = mysqli_real_escape_string($db,$_POST['password']); 
-      
-      checkLogin($myusername, $mypassword);
-      
-   }
 ?>
-<!DOCTYPE html>
+
 <html>
    
    <head>
@@ -53,11 +40,11 @@
           opacity: .85;
         }
 
-    @media (max-width: 420px) {
-      .submit {
-        height: 48px;
-      }
-    }
+@media (max-width: 420px) {
+  .submit {
+    height: 48px;
+  }
+}
           
           
       </style>
@@ -73,14 +60,12 @@
             <div style = "margin:30px">
                
                <form action = "" method = "post">
-                  <label>User Email:</label><input type = "text" name = "username" class = "box"/><br /><br />
+                  <label>Username:</label><input type = "text" name = "username" class = "box"/><br /><br />
                   <label>Password:</label><input type = "password" name = "password" class = "box" /><br/><br />
                   <input type = "submit" value = " Submit " class="submit"/><br/> 
                   
                    
                </form>
-               
-               <div style = "font-size:11px; color:#cc0000; margin-top:10px"><?php echo $error; ?></div>
 					
             </div>
 				
