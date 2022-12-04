@@ -20,13 +20,14 @@
  
   
 <body>
+    <a href="logout.php">Log Out</a>
     <h1>Election Candidates</h1>
-  
+   
     <!-- Create Form -->
-    <form onsubmit="return validateForm();"> 
+    <form name = "form" action="confirmation.html"  onsubmit="return validateForm();"> 
   
         <!-- Details -->
-  
+        
         <div class="form-control">
             <label> President
                 <small> (Vote for one of the following candidates) </small>
@@ -92,7 +93,7 @@
                     <br/> 
         
                 <input type="checkbox" id="Clarence"
-                       name="Secretary" class = "group4" onclick="toggle(this, 'group4')" value="Clarence" /> Clarence Larrsen <span class="tooltip" data-tooltip="Working at company for 4 years, displays hard work at all instances.">?</span> <label for="Clarence"></label>
+                       name="Secretary" class = "group4" onclick="toggle(this, 'group4')" value="Clarence" />Clarence Larrsen <span class="tooltip" data-tooltip="Working at company for 4 years, displays hard work at all instances.">?</span> <label for="Clarence"></label>
         </div>
   
     

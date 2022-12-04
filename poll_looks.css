@@ -6,6 +6,10 @@
             font-family: Verdana;
             text-align: center;
         }
+
+        h1 {
+            margin-left: 60px;
+        }
  
         /* Styling the Form (Color, Padding, Shadow) */
         form {
@@ -14,6 +18,7 @@
             margin: 40px auto;
             padding: 30px 20px;
             box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+            
         }
  
         /* Styling form-control Class */
@@ -25,7 +30,7 @@
         /* Styling form-control Label */
         .form-control label {
             display: block;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
  
         /* Styling form-control input,
@@ -60,6 +65,30 @@
             font: bold15px arial,sans-serif;
             text-shadow: none;
         }
+
+        /* navbar */
+    a {
+        float: right;
+        background: #0066A2;
+        color: white;
+        border-style: outset;
+        border-color: #0066A2;
+        height: 20px;
+        width: 70px;
+        font: bold15px arial,sans-serif;
+        text-shadow: none;
+        text-align: center;
+        overflow: hidden
+        
+    }
+
+
+    a:hover {
+      background-color: #ddd;
+      color: black;
+    } 
+
+
         
         #tooltip info 
         
@@ -78,7 +107,7 @@ input {
   position: relative;
   background: gray;
   padding: 3px 12px;
-  margin: 5px;
+  margin: 6px;
   font-size: 15px;
   border-radius: 50%;
   color: #FFF;
@@ -89,7 +118,7 @@ input {
   position: absolute;
   content: "";
   opacity: 0;
-  transition: all 0.4s ease;
+  transition: all 0.3s ease;
 }
 
 .tooltip:before {
