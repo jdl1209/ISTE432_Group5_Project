@@ -1,6 +1,8 @@
 <?php
    include("config.php");
    include("functions.php");
+
+   $db = 'election';
    session_start();
    
    if($_SERVER["REQUEST_METHOD"] == "POST") {
