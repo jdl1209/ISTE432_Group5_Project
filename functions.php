@@ -56,7 +56,7 @@
 
    }
 
-function checkBallotType{
+function checkBallotType(){
 // Check if the user is logged in
 if (isset($_SESSION['user_id'])) {
   // Get the user's ID from the session
@@ -87,7 +87,7 @@ if (isset($_SESSION['user_id'])) {
   }
 }
    
-function getSocietyName($society_name) {
+function getSocietyName() {
   // Query to get the society name from the database
   $query = "SELECT society_name FROM election_info";
 
@@ -107,7 +107,7 @@ function getSocietyName($society_name) {
   }
 }
    
-function getSocietContact($society_contact) {
+function getSocietContact() {
   // Query to get the society name from the database
   $query = "SELECT society_contact FROM election_info";
 
@@ -127,7 +127,7 @@ function getSocietContact($society_contact) {
   }
 }
    
-function getElectionName($election_name) {
+function getElectionName() {
   // Query to get the society name from the database
   $query = "SELECT election_name FROM election_info";
 
@@ -147,7 +147,7 @@ function getElectionName($election_name) {
   }
 }
 
-function getSocietyPhoneNumber($society_phone_number) {
+function getSocietyPhoneNumber() {
   // Query to get the society name from the database
   $query = "SELECT society_phone_number FROM election_info";
 
@@ -167,7 +167,7 @@ function getSocietyPhoneNumber($society_phone_number) {
   }
 }
    
-function getSocietyColor($society_color) {
+function getSocietyColor() {
   // Query to get the society name from the database
   $query = "SELECT society_color FROM election_info";
 
@@ -187,7 +187,7 @@ function getSocietyColor($society_color) {
   }
 }
    
-function getSocietyLogo($society_logo) {
+function getSocietyLogo() {
   // Query to get the society name from the database
   $query = "SELECT society_logo FROM election_info";
 
@@ -207,7 +207,7 @@ function getSocietyLogo($society_logo) {
   }
 }
    
-function getSocietyLogo($society_logo) {
+function getSocietyLogo() {
   // Query to get the society name from the database
   $query = "SELECT society_logo FROM election_info";
 
