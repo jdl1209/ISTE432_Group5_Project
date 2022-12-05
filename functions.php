@@ -66,7 +66,7 @@ if (isset($_SESSION['user_id'])) {
 
   // Check if the user has voted in the election
   $query = "SELECT * FROM votes WHERE user_id = '$user_id' AND election_id = '$election_id'";
-  $result = $conn->query($query);
+  $result = $conn->query($sql);
 
   if ($result->num_rows == 1) {
     // The user has voted, get the voting method
