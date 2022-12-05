@@ -17,15 +17,6 @@ CREATE TABLE election_info (
 
 )ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-DROP TABLE IF EXISTS `votes` ;
-CREATE  TABLE IF NOT EXISTS `votes` (
-  `vote_id` INT NOT NULL AUTO_INCREMENT ,
-  `office_id` DATE NULL ,
-  `candidate_id` INT NULL ,
-  PRIMARY KEY (`vote_id`) 
-)
-ENGINE = InnoDB;
-
 DROP TABLE IF EXISTS `offices` ;
 CREATE  TABLE IF NOT EXISTS `offices` (
   `office_id` INT NOT NULL AUTO_INCREMENT ,
@@ -44,6 +35,17 @@ CREATE  TABLE IF NOT EXISTS `candidate` (
   `candidate_description` VARCHAR(255) ,
   `candidate_picture` VARCHAR(50) ,
   PRIMARY KEY (`candidate_id`) 
+)
+ENGINE = InnoDB;
+
+DROP TABLE IF EXISTS `votes` ;
+CREATE  TABLE IF NOT EXISTS `votes` (
+  `vote_id` INT NOT NULL AUTO_INCREMENT ,
+  `office_id` INT NULL ,
+  `candidate_id` INT NULL ,
+  PRIMARY KEY (`vote_id`),
+  FOREIGN KEY (`office_id`) REFERENCES `offices`(`office_id`),
+  FOREIGN KEY (`candidate_id`) REFERENCES `candidate`(`candidate_id`)
 )
 ENGINE = InnoDB;
 

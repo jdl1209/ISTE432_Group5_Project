@@ -1,6 +1,24 @@
 <?php
    include("config.php");
    include("functions.php");
+
+   if(isset($_POST['username']) && isset($_POST['password'])){
+
+      $username = $_POST['username'];
+      $password = $_POST['password'];
+
+      $num = checkLogin($username, $password);
+
+      if($num == 1){
+
+         session_start();
+         header('Location: poll.php');
+         exit();
+
+      }
+
+   }
+
 ?>
 
 <html>
@@ -59,7 +77,7 @@
 				
             <div style = "margin:30px">
                
-               <form action = "" method = "post">
+               <form action = "login.php" method = "post">
                   <label>Username:</label><input type = "text" name = "username" class = "box"/><br /><br />
                   <label>Password:</label><input type = "password" name = "password" class = "box" /><br/><br />
                   <input type = "submit" value = " Submit " class="submit"/><br/> 
