@@ -56,6 +56,7 @@
 
    }
 
+function checkBallotType{
 // Check if the user is logged in
 if (isset($_SESSION['user_id'])) {
   // Get the user's ID from the session
@@ -85,8 +86,145 @@ if (isset($_SESSION['user_id'])) {
     return -1;
   }
 }
+   
+function getSocietyName($society_name) {
+  // Query to get the society name from the database
+  $query = "SELECT society_name FROM election_info";
 
-?>
+  // Execute the query and get the result
+  $result = mysqli_query($query);
 
+  // Check if there are any results
+  if (mysqli_num_rows($result) > 0) {
+    // Get the first row from the result
+    $row = mysqli_fetch_assoc($result);
 
+    // Return the society name
+    return $row["society_name"];
+  } else {
+    // Return null if there are no results
+    return null;
+  }
+}
+   
+function getSocietContact($society_contact) {
+  // Query to get the society name from the database
+  $query = "SELECT society_contact FROM election_info";
+
+  // Execute the query and get the result
+  $result = mysqli_query($query);
+
+  // Check if there are any results
+  if (mysqli_num_rows($result) > 0) {
+    // Get the first row from the result
+    $row = mysqli_fetch_assoc($result);
+
+    // Return the society name
+    return $row["society_contact"];
+  } else {
+    // Return null if there are no results
+    return null;
+  }
+}
+   
+function getElectionName($election_name) {
+  // Query to get the society name from the database
+  $query = "SELECT election_name FROM election_info";
+
+  // Execute the query and get the result
+  $result = mysqli_query($query);
+
+  // Check if there are any results
+  if (mysqli_num_rows($result) > 0) {
+    // Get the first row from the result
+    $row = mysqli_fetch_assoc($result);
+
+    // Return the society name
+    return $row["election_name"];
+  } else {
+    // Return null if there are no results
+    return null;
+  }
+}
+
+function getSocietyPhoneNumber($society_phone_number) {
+  // Query to get the society name from the database
+  $query = "SELECT society_phone_number FROM election_info";
+
+  // Execute the query and get the result
+  $result = mysqli_query($query);
+
+  // Check if there are any results
+  if (mysqli_num_rows($result) > 0) {
+    // Get the first row from the result
+    $row = mysqli_fetch_assoc($result);
+
+    // Return the society name
+    return $row["society_phone_number"];
+  } else {
+    // Return null if there are no results
+    return null;
+  }
+}
+   
+function getSocietyColor($society_color) {
+  // Query to get the society name from the database
+  $query = "SELECT society_color FROM election_info";
+
+  // Execute the query and get the result
+  $result = mysqli_query($query);
+
+  // Check if there are any results
+  if (mysqli_num_rows($result) > 0) {
+    // Get the first row from the result
+    $row = mysqli_fetch_assoc($result);
+
+    // Return the society name
+    return $row["society_color"];
+  } else {
+    // Return null if there are no results
+    return null;
+  }
+}
+   
+function getSocietyLogo($society_logo) {
+  // Query to get the society name from the database
+  $query = "SELECT society_logo FROM election_info";
+
+  // Execute the query and get the result
+  $result = mysqli_query($query);
+
+  // Check if there are any results
+  if (mysqli_num_rows($result) > 0) {
+    // Get the first row from the result
+    $row = mysqli_fetch_assoc($result);
+
+    // Return the society name
+    return $row["society_phone_number"];
+  } else {
+    // Return null if there are no results
+    return null;
+  }
+}
+   
+function getSocietyLogo($society_logo) {
+  // Query to get the society name from the database
+  $query = "SELECT society_logo FROM election_info";
+
+  // Execute the query and get the result
+  $result = mysqli_query($query);
+
+  // Check if there are any results
+  if (mysqli_num_rows($result) > 0) {
+    // Get the first row from the result
+    $row = mysqli_fetch_assoc($result);
+
+    // Return the society name
+    return $row["society_logo"];
+  } else {
+    // Return null if there are no results
+    return null;
+  }
+}
+   
 ?>
